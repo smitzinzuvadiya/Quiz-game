@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question-page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quizz-container">
+        <div class="scoreshow">
+            <div class="scoreshow1 small">right<div class="score blue" id="score">0</div></div>
+            <div class="scoreshow1 small">wrong<div class="wrong blue" id="wrong">0</div></div>
+            <div class="total small">Total <span class="totle">questions:</span> <div class="total-question blue" id="total-question"> 0</div></div>
+        </div>
+        <div class="container" id="container">
+            <div id="question" class="question"></div>
+        <form id = "quizform" class="options">
+            <label class="radio-icon"><input type="radio" value="0" name="option" ><span id="opt0" class="icon"></span></label>
+            <label class="radio-icon"><input type="radio" value="1" name="option" ><span id="opt1" class="icon"></span></label>
+            <label class="radio-icon"><input type="radio" value="2" name="option" ><span id="opt2" class="icon"></span></label>
+            <label class="radio-icon"><input type="radio" value="4" name="option" ><span id="opt3" class="icon"></span></label>
+        </form>
+        <div class="buttons-submit-next">
+            <button class="submit button-1" onclick="submitAnswer()">submit</button>
+            <button class="next button-1" onclick="next()">Next</button>
+        </div>
+        <div class="resultshow">result : <div class="resultbox" id="result"></div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
